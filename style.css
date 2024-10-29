@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; 
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+margin: 30px 0 0 0;
+justify-content: center;
+}
+  
+.content {
+    height: 70vh;
+    width: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5%;
+    background-image:  url(../blue_abstract.jpg), linear-gradient(rgba(17, 13, 207, 0.735), rgba(0, 0, 0, 0.886)); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+/* ----- media_icons ----- */
+.media-icons {
+    list-style: none;
+    display: flex;
+}
+
+.media-icons li a {
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.media-icons img {
+    width: 20px;
+    margin: 10px 0 0 0;
+}
+
+/* ----- message-box ----- */
+.message-box {
+    margin: 7vh 0 0 0 ;
+    padding: 5px;
+}
+
+h1 {
+    font-weight: 100;
+    letter-spacing: 0.25cm;
+    color: #fff;
+}
+
+p {
+    margin: 0 0 0 0;
+    padding: 5px;
+    color: #fff;
+}
+
+/* -------- launch timer --------- */
+.launch-timer {
+    color: #fff;;
+    display: flex;
+    margin: 20px 0 0 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.launch-timer slot {
+    min-width: 60px;
+    flex-grow: 1;
+}
+
+.launch-timer p {
+    font-size: 70px;
+    padding: 10px 40px;
+    font-family: 'PT Sans Caption', sans-serif;
+    text-shadow: rebeccapurple 0 0 10px;
+}
+
+/* -------- subscription  -------- */
+.subscription-box {
+    width: 400px;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+form {
+    min-width: 70%; 
+    max-width: 500px;
+    margin: 5px 0 0 0;
+    overflow: hidden;
+    display: flex;
+}
+
+input {
+    font-size: 10px;
+    position: relative;
+    display: inline-block;
+    text-decoration: solid;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.emails-sign-up input[type="email"] {
+    height: 40px;
+    width: 340px;
+    max-width: 500px;
+    margin: 0 0 10px 0;
+    padding: 0 25px;
+    background-color: rgba(18, 11, 161, 0.648);
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+}
+
+.emails-sign-up input[type="submit"] {
+    height: 40px;
+    width: 200px;
+    max-width: 500px;
+    /* border-radius: 0 15px 15px 0; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(225, 221, 221);
+    color: black;
+    font-size: 15px;
+}
+
+.emails-sign-up input[type="submit"]:hover {
+    background: #c50707;
+}
+
